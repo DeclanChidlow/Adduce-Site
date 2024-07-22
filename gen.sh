@@ -1,16 +1,29 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-# Generate standard pages
-pages=(
-    "input/pages/index index.html"
-	"input/pages/404 404.html"
-)
+generate_pages() {
+    local input_dir="input/pages"
+    local output_dir="docs"
+    local output_dir="docs"
 
-for page_input in "${pages[@]}"; do
-    page="${page_input%% *}"
-    output="${page_input#* }"
-    adduce -c "$page" -n "$output" -o docs
-done
+    echo "Generating individual pages..."
+    for page_dir in "$input_dir"/*/; do
+        page_name=$(basename "${page_dir%/}")
+        output_file="${page_name}.html"
+        
+        adduce -c "$page_dir" -n "$output_file" -o "$output_dir"
+    done
+}
 
-# Copy global styles and assets
-cp -r input/global/styles docs/
+copy_global_assets() {
+    echo "Copying styles.."
+    cp -r input/global/styles docs/ || { echo "Error copying styles"; exit 1; }
+}
+
+main() {
+    generate_pages
+    copy_global_assets
+    echo "Site built successfully!"
+}
+
+main

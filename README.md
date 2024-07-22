@@ -16,4 +16,4 @@ Website for the static site generator Adduce.
 The is the website for the static site generator Adduce. You can view the site live at [adduce.vale.rocks](https://adduce.vale.rocks). The GitHub repository for Adduce itself is available at [DeclanChidlow/Adduce](https://github.com/DeclanChidlow/Adduce).
 
 ## Building
-To build the site you can run `sh gen.sh`. The `gen.sh` file will need editing whenever adding new pages to the site. It will output the site to the `docs/` folder so it can be easily published using Github Pages.
+To build the site you can run `sh gen.sh`. It will output the site to the `docs/` folder so it can be easily published using Github Pages.

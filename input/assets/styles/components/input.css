@@ -2,10 +2,10 @@
 	display: inline-block;
 	border-radius: 0.5rem;
 	padding: 0.75rem;
-	color: var(--white);
-	background: var(--dark_blue);
+	color: light-dark(var(--white), var(--black));
+	background: light-dark(var(--dark_blue), var(--blue));
 	text-decoration: none;
-	box-shadow: 0 0 0.75rem var(--dark_blue);
+	box-shadow: 0 0 0.75rem light-dark(var(--dark_blue), var(--blue));
 	user-select: none;
 	transition: transform 0.25s;
 

@@ -49,7 +49,7 @@ h6 {
 }
 
 a {
-	color: var(--dark_blue);
+	color: inherit;
 }
 
 p {

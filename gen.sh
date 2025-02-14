@@ -3,8 +3,7 @@ set -euo pipefail
 
 generate_pages() {
     local input_dir="input/pages"
-    local output_dir="docs"
-    local output_dir="docs"
+    local output_dir="build"
 
     echo "Generating individual pages..."
     for page_dir in "$input_dir"/*/; do

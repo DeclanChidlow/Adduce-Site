@@ -2,14 +2,9 @@ html {
 	scroll-padding-top: 3.5rem;
 }
 
-body {
-	min-height: 100lvh;
-	margin: 0 3rem;
-	color: var(--white);
-	background-color: var(--light_blue);
-}
-
 :root {
+	color-scheme: light dark;
+
 	--black: oklch(0% 0 0);
 	--white: oklch(100% 0 0);
 
@@ -20,8 +15,20 @@ body {
 	--dark_blue: oklch(38.8% 0.25 264);
 }
 
-@media (max-width: 700px) {
-	body {
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0 3rem;
+	color: var(--white);
+	background: #00006d;
+	transition: 0.25s;
+
+	@media (max-width: 45rem) {
 		margin: 0 0.8rem;
 	}
+}
+
+main {
+	margin: 5rem 0;
+	flex-grow: 1;
 }

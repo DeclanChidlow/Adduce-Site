@@ -16,7 +16,7 @@ generate_pages() {
 
 copy_global_assets() {
     echo "Copying styles.."
-    cp -r input/global/styles docs/ || { echo "Error copying styles"; exit 1; }
+    cp -r input/global/styles build/ || { echo "Error copying styles"; exit 1; }
 }
 
 main() {

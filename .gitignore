@@ -1,0 +1,12 @@
+# IDE / editor specific ignores
+.idea/
+.vscode/
+
+# Repo specific
+build/
+
+# Rust
+debug/
+target/
+Cargo.lock
+**/*.rs.bk

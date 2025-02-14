@@ -2,7 +2,7 @@
 
 [[main.block]]
 format = "html"
-content_file = "input/global/elements/head.html"
+content_file = "input/elements/head.html"
 
 [[main.block]]
 format = "html"
@@ -10,7 +10,7 @@ content_file = "input/pages/404/head.html"
 
 [[main.block]]
 format = "html"
-content_file = "input/global/elements/navbar.html"
+content_file = "input/elements/navbar.html"
 
 [[main.block]]
 format = "md"
@@ -18,4 +18,4 @@ content_file = "input/pages/404/404.md"
 
 [[main.block]]
 format = "html"
-content_file = "input/global/elements/footer.html"
+content_file = "input/elements/footer.html"

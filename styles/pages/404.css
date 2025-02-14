@@ -1,0 +1,9 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	min-height: 10rem;
+	height: 90dvh;
+	color: var(--black);
+}

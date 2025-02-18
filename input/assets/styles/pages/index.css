@@ -29,7 +29,7 @@ main {
 }
 
 .landing-body-outer {
-	background: light-dark(var(--light_blue), var(--black));
+	background: light-dark(var(--light_blue), oklch(from var(--black) l c h / 0.8));
 	color: light-dark(var(--black), var(--white));
 	border-radius: 2rem;
 	box-shadow: 0 0.5rem 2rem var(--black);

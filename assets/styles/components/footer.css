@@ -6,12 +6,15 @@ footer {
 	background: linear-gradient(transparent, var(--black));
 	margin: 0 -3rem;
 
+	div {
+		flex: 1;
+	}
+
 	h2 {
 		font-size: 5rem;
 		line-height: initial;
 		text-transform: uppercase;
 		font-weight: 700;
-		flex: 1;
 		margin: 0;
 	}
 
@@ -30,12 +33,13 @@ footer {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 45rem) {
 	footer {
 		padding: 4rem 0.8rem;
 		flex-direction: column-reverse;
 		margin: 0 -0.8rem;
 
+		div,
 		ul {
 			text-align: center;
 		}

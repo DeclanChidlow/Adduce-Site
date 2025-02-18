@@ -9,18 +9,24 @@ main {
 	align-items: center;
 	justify-content: center;
 	color: var(--white);
-	background: radial-gradient(at bottom, #00d4ff, blue 40%, black 90%);
+	background-image: radial-gradient(at 66% 62%, hsla(279, 81%, 66%, 1) 0px, transparent 50%), radial-gradient(at 77% 39%, hsla(352, 74%, 74%, 1) 0px, transparent 50%),
+		radial-gradient(at 17% 34%, hsla(216, 95%, 69%, 1) 0px, transparent 50%), radial-gradient(at 39% 57%, hsla(95, 70%, 72%, 1) 0px, transparent 50%),
+		radial-gradient(at 47% 27%, hsla(108, 97%, 70%, 1) 0px, transparent 50%);
 	margin: 0 -3rem;
 	text-align: center;
 
 	h1 {
 		font-size: 6.5rem;
+		font-size: clamp(3rem, 4rem + 3.5vw, 6.5rem);
 		text-transform: uppercase;
-		line-height: 7rem;
+		line-height: initial;
+		text-shadow: 0 0 10rem var(--dark_blue);
 	}
 
 	p {
 		font-size: 2rem;
+		line-height: 2.2rem;
+		text-shadow: 0 0 10rem var(--dark_blue);
 	}
 
 	@media (max-width: 45rem) {
@@ -81,6 +87,10 @@ main {
 	.description h2 {
 		text-wrap: initial;
 		padding: 0 4rem;
+
+		@media (max-width: 50rem) {
+			padding: 0;
+		}
 	}
 
 	.cta {

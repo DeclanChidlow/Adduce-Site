@@ -39,6 +39,7 @@ footer {
 		flex-direction: column-reverse;
 		margin: 0 -0.8rem;
 
+		div,
 		ul {
 			text-align: center;
 		}

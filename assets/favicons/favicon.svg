@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#outer-glow-2);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #273b95;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="80" cy="80" fx="80" fy="80" r="80" gradientUnits="userSpaceOnUse">
+      <stop offset=".48" stop-color="#273b95" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#273b95" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="outer-glow-2" x="15" y="6" width="130" height="129" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#273b95" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-2" x="0" y="0" width="160" height="160" rx="80" ry="80"/>
+  <g class="cls-1">
+    <path class="cls-3" d="M90.1,22h-19.93L31.83,118.9h23.26l6.92-18.55h35.46l6.9,18.55h23.81L90.1,22ZM68.61,82.63l4.75-12.73c.74-2.31,1.52-4.55,2.35-6.72.84-2.17,1.59-4.34,2.29-6.51.61-1.93,1.23-3.89,1.85-5.85.59,1.92,1.19,3.87,1.82,5.85.73,2.35,1.47,4.63,2.21,6.86.74,2.21,1.47,4.29,2.21,6.23l4.78,12.87h-22.27Z"/>
+  </g>
+</svg>

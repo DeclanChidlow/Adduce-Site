@@ -55,10 +55,6 @@ a {
 	word-break: break-word;
 }
 
-p {
-	margin-bottom: 0.8rem;
-}
-
 li {
 	list-style-position: inside;
 	line-height: 1.4rem;

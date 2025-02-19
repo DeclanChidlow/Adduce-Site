@@ -73,7 +73,7 @@ main {
 	}
 
 	.card {
-		padding: 1rem;
+		padding: 2rem 1rem;
 		background: var(--grey);
 		border-radius: 0.5rem;
 		color: var(--white);

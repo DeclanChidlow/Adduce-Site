@@ -3,7 +3,7 @@
 	border-radius: 0.5rem;
 	padding: 0.75rem;
 	color: light-dark(var(--white), var(--black));
-	background: light-dark(var(--dark_blue), var(--blue));
+	background: light-dark(var(--dark_blue), var(--white));
 	text-decoration: none;
 	box-shadow: 0 0 0.75rem light-dark(var(--dark_blue), var(--blue));
 	user-select: none;

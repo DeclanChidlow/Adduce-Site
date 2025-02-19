@@ -14,12 +14,14 @@ header#navbar {
 	width: calc(100% - 6rem);
 	z-index: 1000;
 
-	animation: dock linear both;
-	animation-timeline: scroll();
-	animation-range: 0vh 30vh;
+	@media (min-width: 45rem) {
+		animation: dock linear both;
+		animation-timeline: scroll();
+		animation-range: 0vh 30vh;
+	}
 
 	@media (max-width: 45rem) {
-		margin: 1rem 0.8rem;
+		margin: 0.5rem 0.8rem;
 		width: calc(100% - 1.6rem);
 	}
 
@@ -53,7 +55,7 @@ header#navbar {
 			}
 		}
 	}
-	
+
 	.donate {
 		color: oklch(80.8% 0.165 73.5);
 	}
